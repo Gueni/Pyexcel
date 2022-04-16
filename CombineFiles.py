@@ -13,6 +13,4 @@ for file in excel_files:
   df = pd.read_excel(file, skiprows = 1)
   #append results to merge
   merge = merge.append(df, ignore_index = True)
-
-#create final workbook with merged results
 merge.to_excel('Merged_Files.xlsx')
